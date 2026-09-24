@@ -620,7 +620,7 @@ def update_last_inspection():
         elif choice == "2":
             new_date = input("Enter the new maintenance date (YYYY-MM-DD): ")
             # Validate the entered date
-            if not validate_date_input(new_date):
+            if not validate_date_input(new_date, "%Y-%m-%d"):
                 print("Error: Invalid date format.")
                 return
         else:
